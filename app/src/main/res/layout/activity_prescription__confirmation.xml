@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/prisback"
+    tools:context=".Prescription_Confirmation"
+    android:id="@+id/main_Layout">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/archivo_black"
+        android:gravity="center|center_horizontal"
+        android:padding="10dp"
+        android:text="Confirmation Details"
+        android:textAlignment="center"
+        android:textColor="#FFD53C"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="458dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/prescription_conformation_list_view_background"
+        android:fontFamily="@font/droid_serif_bold"
+        android:gravity="center_horizontal"
+        android:hint="item will here"
+        android:padding="50dp"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:onClick="buttonClick"
+        android:fontFamily="@font/artifika"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:background="#700034"
+        android:textSize="18dp"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/Cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#700034"
+        android:fontFamily="@font/artifika"
+        android:onClick="buttonCancel"
+        android:padding="7dp"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+
+</LinearLayout>

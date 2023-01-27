@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/coronaviruscheckerbg"
+    tools:context=".questions.Covid_19_Q5">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="373dp"
+        android:layout_height="657dp"
+        android:layout_marginBottom="76dp"
+        app:cardBackgroundColor="#F2D3D3D2"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="359dp">
+
+            <TextView
+                android:id="@+id/heading"
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:fontFamily="@font/candal"
+                android:padding="10dp"
+                android:text="Call us to get a coronavirus test"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/guestion2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/heading"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="You can call our contact centre to get a test:"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+
+            <ImageButton
+                android:id="@+id/bullet3"
+                android:layout_width="27dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/guestion2"
+                android:background="@null"
+                android:src="@drawable/ic_bullet_point" />
+
+            <TextView
+                android:id="@+id/symtem3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/guestion2"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@id/bullet3"
+                android:layout_toRightOf="@id/bullet3"
+                android:text="England, Wales and Northern Ireland: call 119 (free from mobiles and landlines)"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/black" />
+
+            <ImageButton
+                android:id="@+id/bullet4"
+                android:layout_width="27dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/symtem3"
+                android:background="@null"
+                android:src="@drawable/ic_bullet_point" />
+
+            <TextView
+                android:id="@+id/symtem4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/symtem3"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@id/bullet3"
+                android:layout_toRightOf="@id/bullet3"
+                android:text="Scotland: call 0300 303 2713 (charged at your standard network rate)
+"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/black" />
+
+
+
+
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/preview_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="460dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/finish_btn"
+            android:layout_width="224dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/covid_19_checker_btn_background"
+            android:text="Finish" />
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

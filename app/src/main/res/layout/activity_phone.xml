@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Phone">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneToolbar"
+        android:layout_marginTop="59dp"
+        android:src="@drawable/phonebackground" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.GPBOOKINGAPP.AppBarOverlay">
+
+        <include
+            android:id="@+id/phoneToolbar"
+            layout="@layout/phonr_toolbar"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        layout="@layout/content_phone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <EditText
+        android:id="@+id/edit_text_number"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:hint="Enter The Phone Number Here"
+        android:inputType="phone"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp" />
+
+    <ImageView
+        android:id="@+id/image_call"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="154dp"
+        android:layout_marginRight="154dp"
+        android:layout_marginBottom="368dp"
+        android:src="@drawable/phoenicon" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="61dp"
+        android:layout_height="53dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="697dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="73dp"
+        app:srcCompat="@drawable/circle_splash"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="27dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="258dp"
+        android:fontFamily="@font/galindo"
+        android:gravity="center"
+        android:text="Address: 15 Wide Way, Mitcham CR4 1BP  Phone: 020 8623 1300"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="356dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginBottom="180dp"
+        android:fontFamily="@font/berkshire_swash"
+        android:gravity="center"
+        android:text="Opening Hours: Monday - Friday at 8am-6.30pm "
+        android:textColor="#FF0000"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="161dp"
+        android:fontFamily="@font/berkshire_swash"
+        android:gravity="center"
+        android:text="Saturday and Sunday Closed"
+        android:textColor="#FF0000"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="193dp"
+        android:layout_marginRight="193dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="106dp"
+        android:text="Alternatives to" />
+
+    <TextView
+        android:id="@+id/click_here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="109dp"
+        android:layout_marginRight="109dp"
+        android:layout_marginBottom="105dp"
+        android:text="‘Click Here’"
+        android:textStyle="italic"
+        android:textColor="#0074FF" />
+
+
+</RelativeLayout>

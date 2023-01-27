@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">GP Booking Application</string>
+    <string name="account">Account</string>
+    <string name="PrivacyPolicy">Privacy Policy</string>
+    <string name="LegalInfo">Legal Information</string>
+    <string name="title_activity_side_nav">side_nav</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_phone">Phone</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="tab_1">Product</string>
+    <string name="tab_2">Cart</string>
+    <string name="corona_guidence_info">It is important that we all take steps to reduce the spread of coronavirus (COVID-19) infection in the community to save lives and protect the NHS.</string>
+    <string name="corona_guidence_info1">people who have received a positive COVID-19 test result (whether or not they have symptoms)</string>
+    <string name="corona_guidence_info2">people who currently live in the same household as someone with COVID-19 symptoms, or with someone who has tested positive for COVID-19</string>
+    <string name="corona_guidence5">A group of people (who may or may not be related) living at the same address and who share cooking facilities, bathrooms or toilets and/or living areas. This may include students in boarding schools or halls of residence who share such facilities.</string>
+    <string name="corona_guidence_info8">For most people, COVID-19 will be a mild illness. However, if you have any of the symptoms above, stay at home and arrange to have a test.</string>
+    <string name="corona_checker_info9">There are several other symptoms linked with COVID-19. These other symptoms may have another cause and are not on their own a reason to have a COVID-19 test. If you are concerned about your symptoms, seek medical advice.</string>
+    <string name="coronna_guidance_info6">PCR tests detect the RNA (ribonucleic acid, the genetic material) of a virus. PCR tests are the most reliable COVID-19 tests. It takes some time to get the results because they are usually processed in a laboratory. If you have symptoms of COVID-19.</string>
+    <string name="guidance8">From 15 February, if you arrive in England and have travelled in a country on the banned travel list (sometimes called the ‘red list’) in the last 10 days, you will need to quarantine (self-isolate) in a government quarantine hotel for 10 days. You will need to book your hotel before you travel and 2 COVID-19 tests to take during your quarantine.</string>
+    <string name="guidance9">If you’re coming from a country that is not on the banned travel list, you will need to quarantine at home for 10 days. You will need to book 2 COVID-19 tests before you arrive to take during your quarantine.</string>
+    <string name="guidance10">You do not need to quarantine in England if you’re travelling from Ireland, the Channel Islands or the Isle of Man and have not been in any other countries in the last 10 days.</string>
+    <string name="guidence13">When you arrive in England, you must travel directly to the place you are staying and not leave until 10 days have passed since you left or transited through any country outside the Common Travel Area. This is known as ‘self-isolating’. Similar rules apply in relation to Scotland, Wales and Northern Ireland.</string>
+    <string name="guidance2">The 10-day self-isolation period is necessary because it can take up to 10 days for coronavirus symptoms to appear. If you’re travelling to England for less than 10 days, you will be expected to self-isolate for the length of your stay, but you can travel directly to your place of departure. It is important to note that under the national lockdown rules for England, you must not leave or be outside of your place of residence except where necessary.</string>
+    <string name="guidance3">Travel corridors have been suspended from 4am on Monday 18 January. Anyone arriving in the UK from outside the Common Travel Area after 4am on Monday 18 January will needs to self-isolate for 10 days.</string>
+    <string name="guidance1">Before you travel to England from anywhere outside the Common Travel Area, you must provide your journey, contact details and the address where you will self-isolate. You can complete the public health passenger locator form 48 hours before you arrive. You may be required to present these details on your arrival in England. Similar rules apply in Scotland, Wales and Northern Ireland.</string>
+    <string name="guidance5">You may be refused permission to enter the UK (if you are not a British citizen), or fined if you do not provide your contact details or do not self-isolate when required to do so.</string>
+    <string name="involves">The test involves taking a swab of the inside of your nose and the back of your throat, using a long cotton bud.</string>
+    <string name="ivoles1">You can do the swab yourself (if you are aged 12 or over) or someone can do it for you. Parents or guardians have to swab test children aged 11 or under.</string>
+    <string name="question1">Is the person who needs a test an essential worker?</string>
+    <string name="question2">Does the person who needs a test have coronavirus symptoms?</string>
+    <string name="question3">Has the person been asked to get a follow-up test?</string>
+    <string name="St_Helier_Hospital">St Helier Hospital in the London Borough of Sutton is run by Epsom and St Helier University Hospitals NHS Trust along with Epsom Hospital. It is located next to the large St Helier council estate and close to the major intersection known as Rosehill.</string>
+    <string name="hospital">St George\'s Hospital is a teaching hospital in Tooting, London. Founded in 1733, it is one of the UK\'s largest teaching hospitals and one of the largest hospitals in Europe. It is run by the St George\'s University Hospitals NHS Foundation Trust.</string>
+
+    <string-array name="quantity_string_array">
+        <item>1</item>
+        <item>2(Max)</item>
+    </string-array>
+
+    <string-array name="Doctors_Name">
+        <item>Dr Halan Adward</item>
+        <item>Dr Lee Tran</item>
+        <item>Dr Balia Maha</item>
+        <item>Dr Raj Malinga</item>
+        <item>Dr Kamila Ahmed</item>
+    </string-array>
+
+
+</resources>

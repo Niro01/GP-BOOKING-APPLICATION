@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Self_Isolation">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/selfisolation_toolbar" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginBottom="3dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#E3E1E1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/guidence"
+            android:background="#0071B6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include2"
+            app:layout_constraintVertical_bias="0.033" />
+
+            <TextView
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/candal"
+                android:text="Who this guidance is for"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/corona_guidence_info"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/black" />
+            
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="This guidance is for:"
+                android:textSize="15dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/bullet"
+                android:layout_width="27dp"
+                android:layout_height="25dp"
+                android:background="@null"
+                android:src="@drawable/ic_bullet_point" />
+
+            <TextView
+                android:id="@+id/info1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="0dp"
+                android:layout_toEndOf="@id/bullet"
+                android:text="people with symptoms that may be caused by COVID-19, including those who are waiting for a test"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/bullet" />
+
+
+                <ImageButton
+                    android:id="@+id/bullet2"
+                    android:layout_width="27dp"
+                    android:layout_height="25dp"
+                    android:background="@null"
+                    android:layout_below="@id/info1"
+                    android:src="@drawable/ic_bullet_point" />
+
+                <TextView
+                    android:id="@+id/info2"
+                    android:layout_below="@id/info1"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@id/bullet"
+                    android:text="@string/corona_guidence_info1"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@id/bullet" />
+
+                <ImageButton
+                    android:id="@+id/bullet3"
+                    android:layout_width="27dp"
+                    android:layout_height="25dp"
+                    android:background="@null"
+                    android:layout_below="@id/info2"
+                    android:src="@drawable/ic_bullet_point" />
+
+                <TextView
+                    android:id="@+id/info3"
+                    android:layout_below="@id/info2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@id/bullet"
+                    android:text="@string/corona_guidence_info2"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@id/bullet" />
+
+                <ImageButton
+                    android:id="@+id/bullet4"
+                    android:layout_width="27dp"
+                    android:layout_height="25dp"
+                    android:background="@null"
+                    android:layout_below="@id/info3"
+                    android:src="@drawable/ic_bullet_point" />
+
+                <TextView
+                    android:id="@+id/info4"
+                    android:layout_below="@id/info3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_toEndOf="@id/bullet"
+                    android:layout_marginRight="10dp"
+                    android:text="one person living alone"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@id/bullet" />
+
+                <ImageButton
+                    android:id="@+id/bullet5"
+                    android:layout_width="27dp"
+                    android:layout_height="25dp"
+                    android:background="@null"
+                    android:layout_below="@id/info4"
+                    android:src="@drawable/ic_bullet_point" />
+
+                <TextView
+                    android:id="@+id/info5"
+                    android:layout_below="@id/info4"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@id/bullet"
+                    android:text="@string/corona_guidence5"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@id/bullet" />
+           </RelativeLayout>
+
+            <TextView
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/candal"
+                android:text="Symptoms"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="The most important symptoms of COVID-19 are recent onset of any of the following:"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/bullet6"
+                    android:layout_width="27dp"
+                    android:layout_height="25dp"
+                    android:background="@null"
+                    android:src="@drawable/ic_bullet_point" />
+
+                <TextView
+                    android:id="@+id/info6"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_toEndOf="@id/bullet6"
+                    android:text="A new continuous cough"
+                    android:layout_marginRight="10dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@id/bullet6" />
+
+
+                <ImageButton
+                    android:id="@+id/bullet7"
+                    android:layout_width="27dp"
+                    android:layout_height="25dp"
+                    android:background="@null"
+                    android:layout_below="@id/info6"
+                    android:src="@drawable/ic_bullet_point" />
+
+                <TextView
+                    android:id="@+id/info7"
+                    android:layout_below="@id/info6"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_toEndOf="@id/bullet6"
+                    android:layout_marginRight="10dp"
+                    android:text="a high temperature"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@id/bullet6" />
+
+                <ImageButton
+                    android:id="@+id/bullet8"
+                    android:layout_width="27dp"
+                    android:layout_height="25dp"
+                    android:background="@null"
+                    android:layout_below="@id/info7"
+                    android:src="@drawable/ic_bullet_point" />
+
+                <TextView
+                    android:id="@+id/info8"
+                    android:layout_below="@id/info7"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@id/bullet7"
+                    android:text="A loss of, or change in, your normal sense of taste or smell (anosmia)"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@id/bullet7" />
+            </RelativeLayout>
+
+            <TextView
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:text="@string/corona_guidence_info8"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/corona_checker_info9"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/black" />
+
+            <TextView
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/candal"
+                android:text="Tests for COVID-19"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="There are 2 main types of test currently being used to detect if someone has COVID-19:"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/bullet9"
+                    android:layout_width="27dp"
+                    android:layout_height="25dp"
+                    android:background="@null"
+                    android:src="@drawable/ic_bullet_point" />
+
+                <TextView
+                    android:id="@+id/info9"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_toEndOf="@id/bullet9"
+                    android:layout_marginRight="10dp"
+                    android:text="Polymerase Chain Reaction (PCR) tests"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@id/bullet9" />
+
+
+                <ImageButton
+                    android:id="@+id/bullet10"
+                    android:layout_width="27dp"
+                    android:layout_height="25dp"
+                    android:background="@null"
+                    android:layout_below="@id/info9"
+                    android:src="@drawable/ic_bullet_point" />
+
+                <TextView
+                    android:id="@+id/info10"
+                    android:layout_below="@id/info9"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_toEndOf="@id/bullet9"
+                    android:layout_marginRight="10dp"
+                    android:text="Lateral Flow Device antigen (LFD) tests"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@id/bullet9" />
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/coronna_guidance_info6"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <ImageView
+                android:id="@+id/stay"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/guidancetwo"
+                android:background="#0071B6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/include2"
+                app:layout_constraintVertical_bias="0.033" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/guidance8"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/guidance9"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/guidance10"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/candal"
+                android:layout_marginRight="10dp"
+                android:text="Testing for people travelling to England"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You must have proof of a negative coronavirus (COVID-19) test to travel to England]."
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You must take a test even if you are a UK citizen."
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You must take the test in the 3 days before you start your journey to England."
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/black" />
+
+            <TextView
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/candal"
+                android:layout_marginRight="10dp"
+                android:text="Isolating in the UK"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/guidence13"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The 10-day period is counted from the day after you left your country of origin before returning to the UK."
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/guidance2"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/guidance3"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/guidance1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/guidance5"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <ImageView
+                android:id="@+id/alert"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/stay"
+                android:background="#0071B6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/include2"
+                app:layout_constraintVertical_bias="0.033" />
+
+        </LinearLayout>
+            
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

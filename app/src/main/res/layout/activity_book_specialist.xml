@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".BookSpecialist">
+
+    <include
+        layout="@layout/specialist_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:layout_marginTop="60dp">
+
+        <androidx.cardview.widget.CardView
+            android:backgroundTint="#F1FEFF"
+            android:layout_margin="2dp"
+            app:cardCornerRadius="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="326dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="625dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:gravity="center|start"
+                android:padding="10dp"
+                android:text="Specialist Details"
+                android:textColor="#4E1717"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="40dp"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0037FF"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="86dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Welcome back to Booking service Please Select Your Specialist Below. "
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_height="wrap_content"
+                android:textColor="#0004FF"
+                android:text="Hello " />
+
+            <TextView
+                android:id="@+id/UserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="53dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Name"
+                android:textColor="#602A00"
+                android:textSize="18dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="136dp"
+                android:layout_alignParentTop="true">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="15dp"
+                        app:cardBackgroundColor="#D9FAF6"
+                        app:cardCornerRadius="20dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="500dp"
+                            app:cardCornerRadius="1000dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/boydoctor" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="32dp"
+                            android:text="Mr Paul Robert"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Consultant Transplant, General and Vascular Surgeon "
+                            android:layout_marginTop="60dp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="80dp"
+                            android:src="@drawable/fivestars" />
+
+                        <Button
+                            android:id="@+id/SL_Paul"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="140dp"
+                            android:layout_marginTop="-75dp"
+                            android:background="@drawable/book_now_btn"
+                            android:text="SELECT"
+                            android:textColor="#FFFFFF" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="400dp"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="250dp"
+                        android:background="@color/black"
+                        app:layout_constraintBottom_toTopOf="@+id/continue_btn"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.868"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView19"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="270dp"
+                        android:layout_marginRight="15dp"
+                        app:cardBackgroundColor="#D9FAF6"
+                        app:cardCornerRadius="20dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="500dp"
+                            app:cardCornerRadius="1000dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/boydoctor1" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="32dp"
+                            android:text="Mr William Hentry"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Cardiothoracic surgeon"
+                            android:layout_marginTop="60dp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="80dp"
+                            android:src="@drawable/fivestars" />
+
+                        <Button
+                            android:id="@+id/SL_William"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="140dp"
+                            android:layout_marginTop="-75dp"
+                            android:background="@drawable/book_now_btn"
+                            android:text="SELECT"
+                            android:textColor="#FFFFFF" />
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="400dp"
+                        android:layout_height="2dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="490dp"
+                        android:background="@color/black"
+                        app:layout_constraintBottom_toTopOf="@+id/continue_btn"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.868"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView19"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="510dp"
+                        android:layout_marginRight="15dp"
+                        app:cardBackgroundColor="#D9FAF6"
+                        app:cardCornerRadius="20dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="500dp"
+                            app:cardCornerRadius="1000dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/girldoctor" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="32dp"
+                            android:text="Miss Emily Elizabeth"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Haematologist (blood specialist)"
+                            android:layout_marginTop="60dp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"/>
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="80dp"
+                            android:src="@drawable/fivestars" />
+
+                        <Button
+                            android:id="@+id/SL_Emily"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="140dp"
+                            android:layout_marginTop="-75dp"
+                            android:background="@drawable/book_now_btn"
+                            android:text="SELECT"
+                            android:textColor="#FFFFFF" />
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <View
+                        android:layout_width="400dp"
+                        android:layout_height="2dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="720dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#000000"
+                        app:layout_constraintBottom_toTopOf="@+id/continue_btn"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.868"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView19"
+                        app:layout_constraintVertical_bias="0.0" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/coronaviruscheckerbg"
+    tools:context=".questions.Covid_19_Q4">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="373dp"
+        android:layout_height="657dp"
+        android:layout_marginBottom="76dp"
+        app:cardBackgroundColor="#F2D3D3D2"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="359dp">
+
+            <TextView
+                android:id="@+id/heading"
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/candal"
+                android:padding="10dp"
+                android:text="When did these symptoms start?"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/guestion"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/heading"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="If you cannot remember the exact days, enter how many Days you think it was roughly."
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+
+            <EditText
+                android:id="@+id/Days"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="133dp"
+                android:layout_marginRight="133dp"
+                android:layout_marginBottom="82dp"
+                android:background="#8FFFFFFF"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Days"
+                android:inputType="date"
+                android:padding="8dp"
+                android:textColor="#220101"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.345" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/preview_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="500dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:backgroundTint="@color/white" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/next_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="500dp"
+            android:src="@drawable/ic_next_arrow"
+            app:backgroundTint="@color/white" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

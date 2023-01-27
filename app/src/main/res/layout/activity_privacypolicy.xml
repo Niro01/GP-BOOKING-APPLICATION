@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".privacypolicy">
+
+
+    <include
+        layout="@layout/privacipolicy_toolbar"/>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="404dp"
+        android:layout_height="622dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="53dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poly"
+                android:text="Privacy Policy"
+                android:textSize="33dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="365dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Privacy and data security are crucial to the NHS and the government. Every day, people trust us
+                with their personal data and we take this responsibility very seriously. It's at the heart of our relationship with
+                 the people we serve. Because of this, we've taken steps to make sure the NHS COVID-19 app protects your privacy and identity.
+
+                The NHS COVID-19 app protects your privacy and identity from other app users, and their privacy and identity from you.
+                 The app uses random IDs that cannot be used by the NHS or the government to identify who you are, or who you’ve spent time with.
+
+                The app cannot:
+
+                use your GPS location or track where you have been
+                be used to check or monitor if you’re self-isolating
+                be used by law enforcement to identify or track you
+                see personal information on your phone, such as your messages, address book or your phone contacts"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="121dp"
+                android:fontFamily="@font/amaranth_bold"
+                android:onClick="broswer1"
+                android:text="If you need more Info Please Click the text"
+                android:textColor="#1832DD"
+                android:textSize="18dp"
+                app:backgroundTint="#FFFFFF" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9FAF6"
+    android:id="@+id/relativeLayout"
+    tools:context=".nurses.Nurse_Mr_Jaxon_Bell">
+
+    <include
+        layout="@layout/bookingdashboard"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/nurse_Mr_Jaxon_Bell_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="105dp"
+        app:cardBackgroundColor="#D9FAF6">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="500dp"
+            app:cardCornerRadius="1000dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/nursefour" />
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/nurse_Mr_Jaxon_Bell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-3dp"
+            android:layout_marginTop="-50dp"
+            android:text="Mr Jaxon Bell"
+            android:hint="Mr Jaxon Bell"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="-18dp"
+            android:text="ID 3549028GP"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="1dp"
+            android:text="Nurse"
+            android:textSize="15dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:text="Nurse in wide way medical center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="#292929" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="691dp"
+        android:background="#1DBF00"
+        android:fontFamily="@font/denk_one"
+        android:gravity="center|start"
+        android:padding="10dp"
+        android:text="You are booking an Appointment with:"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nurse_Mr_Jaxon_Bell_cardview"
+        android:padding="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:cardBackgroundColor="#000000"
+            app:cardCornerRadius="50dp">
+
+            <EditText
+                android:id="@+id/date_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="1dp"
+                android:drawableLeft="@drawable/ic_baseline_calendar"
+                android:gravity="center"
+                android:hint="Choose Your Date"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="55dp"
+            app:cardBackgroundColor="#000000"
+            app:cardCornerRadius="50dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/timeslot"
+                android:layout_width="262dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="90dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:hint="Choose Your Time"
+                android:textColorHint="@color/white"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/dropdown"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="345dp"
+                android:src="@drawable/ic_drop_down"/>
+
+            <ImageView
+                android:id="@+id/clock"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/ic_baseline_clock" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="370dp"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:text="Alternatively You can Visit via website, contact your GP, Email and visit Your GP." />
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="13dp"
+        android:text="Website : "
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/ic_wesite"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginBottom="350dp" />
+
+    <TextView
+        android:id="@+id/website_1"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="117dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:text="www.wideway_gpbooking.co.uk"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginBottom="350dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="13dp"
+        android:text="Phone : "
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/ic_baseline_phone_"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginBottom="316dp" />
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="117dp"
+        android:layout_marginLeft="13dp"
+        android:gravity="center_vertical"
+        android:text="02012345678"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginBottom="316dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="13dp"
+        android:text="Email : "
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/ic_baseline_mark_email"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginBottom="285dp" />
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="117dp"
+        android:layout_marginLeft="13dp"
+        android:gravity="center_vertical"
+        android:text="wideway@gpbooking.com"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginBottom="285dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="13dp"
+        android:text="Location : "
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/ic_baseline_location"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginBottom="250dp" />
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="117dp"
+        android:layout_marginLeft="13dp"
+        android:gravity="center_vertical"
+        android:text="15 Wideway, CR4 1BP."
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginBottom="250dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="550dp"
+        android:layout_marginBottom="80dp"
+        android:padding="15dp"
+        android:weightSum="3"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nameET"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:gravity="center"
+            android:hint="Enter Your Name" />
+
+        <EditText
+            android:id="@+id/dobET"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:onClick="openDatePicker"
+            android:hint="Enter Your DOB (DD/MM/YYYY)" />
+
+        <EditText
+            android:id="@+id/emailET"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:inputType="textEmailAddress"
+            android:gravity="center"
+            android:hint="Enter Your Email" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/Submit_Gp_detail"
+        android:layout_width="334dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="729dp"
+        android:background="#630000"
+        android:onClick="ConfirmationSubmit"
+        android:text="Submit"
+        android:textColor="#FFFFFF" />
+
+
+</RelativeLayout>

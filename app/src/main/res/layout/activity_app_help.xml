@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppHelp">
+
+
+    <include
+        layout="@layout/user_hand_book_toolbar" />
+   <RelativeLayout
+       android:layout_marginTop="60dp"
+    android:layout_width="match_parent"
+       android:padding="15dp"
+    android:layout_height="wrap_content">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:fontFamily="@font/acme"
+           android:text="Welcome to User HandBook Page and in This Page You Will be Known How to Easily Use This GP Service Application Step by Step by Watching Video Guide."
+           android:textColor="#000000"
+           android:textSize="18dp" />
+
+   </RelativeLayout>
+
+    <ScrollView
+        android:layout_marginTop="150dp"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+       <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droid_serif_bold"
+            android:textColor="@color/black"
+            android:text="Register / Login :" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logintoregisterpage"
+                android:layout_height="300dp"/>
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_marginTop="300dp"
+               android:layout_marginBottom="10dp"
+               android:weightSum="2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_weight="1"
+            android:fontFamily="@font/droid_serif_bold"
+            android:textColor="@color/black"
+            android:text="For More Info : " />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:layout_weight="1"
+            android:textColor="@color/Blue"
+            android:text=" Click here"
+            android:onClick="ClickClickhere"
+            android:textStyle="italic" />
+           </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/droid_serif_bold"
+                    android:textColor="@color/black"
+                    android:text="Drawer :" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/drawerpage"
+                    android:layout_height="300dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="300dp"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/droid_serif_bold"
+                        android:textColor="@color/black"
+                        android:text="For More Info : " />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aclonica"
+                        android:layout_weight="1"
+                        android:textColor="@color/Blue"
+                        android:text=" Click here"
+                        android:onClick="ClickDrawerClickhere"
+                        android:textStyle="italic" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/droid_serif_bold"
+                    android:textColor="@color/black"
+                    android:text="Booking :" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/bookedpage"
+                    android:layout_height="300dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="310dp"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/droid_serif_bold"
+                        android:textColor="@color/black"
+                        android:text="For More Info : " />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aclonica"
+                        android:layout_weight="1"
+                        android:textColor="@color/Blue"
+                        android:text=" How to Book ?"
+                        android:onClick="ClickBookingGP"
+                        android:textStyle="italic" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/droid_serif_bold"
+                    android:textColor="@color/black"
+                    android:text="Request Prescription :" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/filuprequestprescription"
+                    android:layout_height="300dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="310dp"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/droid_serif_bold"
+                        android:textColor="@color/black"
+                        android:text="For More Info : " />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aclonica"
+                        android:layout_weight="1"
+                        android:textColor="@color/Blue"
+                        android:text=" How to Request Prescription ?"
+                        android:onClick="ClickPrescrition"
+                        android:textStyle="italic" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/droid_serif_bold"
+                    android:textColor="@color/black"
+                    android:text="E - Pharma :" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/phamaacountinue"
+                    android:layout_height="300dp"/>
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="310dp"
+                    android:weightSum="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/droid_serif_bold"
+                        android:textColor="@color/black"
+                        android:text="For More Info : " />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aclonica"
+                        android:layout_weight="1"
+                        android:textColor="@color/Blue"
+                        android:text=" How to Order E-Pharma Products?"
+                        android:onClick="ClickOrder"
+                        android:textStyle="italic" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/droid_serif_bold"
+                    android:textColor="@color/black"
+                    android:text="Rate Us :" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/rateuspage"
+                    android:layout_height="300dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="310dp"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/droid_serif_bold"
+                        android:textColor="@color/black"
+                        android:text="For More Info : " />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aclonica"
+                        android:layout_weight="1"
+                        android:textColor="@color/Blue"
+                        android:text=" How to rate Us ?"
+                        android:onClick="ClickRate"
+                        android:textStyle="italic" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

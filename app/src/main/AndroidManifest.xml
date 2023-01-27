@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gpbookingapplication">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:gravity="center_horizontal"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GPBOOKINGAPP">
+        <activity android:name=".AppHelp"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".specialist.Specialist_Miss_Emily_Elizabeth"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".specialist.Specialist_Mr_William_Hentry"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".specialist.Specialist_Mr_Paul_Robert"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".nurses.Nurse_Mrs_Vithya_Kumar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".nurses.Nurse_Miss_Lena_Anroosh"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".nurses.Nurse_Mrs_Madison_Julian"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".nurses.Nurse_Mr_Ellie_Tran"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".nurses.Nurse_Mr_Jaxon_Bell"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dr_Kamila_Ahmed"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dr_Raj_Malinga"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dr_Balai_Maha"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dr_Lee_Tran"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Booking_Confirmation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dr_Halan_Adward"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Book_GP_Splash"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Prescription_Confirmation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Chat"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Click_here"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".questions.Covid_19_Q7"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".questions.Covid_19_Q6"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".questions.Covid_19_Q5"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".questions.Covid_19_Q4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".questions.Covid_19_Q3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".questions.Covid_19_Q2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".questions.Covid_19_Q1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NurseDetails"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DoctorsDetails"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".views.Pharmacy_Products" />
+        <activity
+            android:name=".Pharmacy"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".shop" />
+        <activity
+            android:name=".logout"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SpecialistRoom"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NurseRoom"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Self_Isolation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Corona"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Prescription"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BookSpecialist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BookNurse"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BookGP"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Phone"
+            android:label="@string/title_activity_phone"
+            android:theme="@style/Theme.GPBOOKINGAPP.NoActionBar" />
+        <activity
+            android:name=".History"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RateUs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".privacypolicy"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserDetails"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ForgotPassword"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+    </application>
+
+</manifest>

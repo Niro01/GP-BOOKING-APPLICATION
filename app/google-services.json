@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "464024873443",
+    "project_id": "gp-booking-application-277ab",
+    "storage_bucket": "gp-booking-application-277ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464024873443:android:dba8d180df4abe670f58d6",
+        "android_client_info": {
+          "package_name": "com.example.gpbookingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "464024873443-obc14f0rg4odpo8tq3460o7iehmo5th4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArbVcqysgJnX9zF4-0pZEHznt27WGjyWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "464024873443-obc14f0rg4odpo8tq3460o7iehmo5th4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
